@@ -1,0 +1,42 @@
+// Declaração da classe User com dois atributos: id e name.
+class User(val id: Int, val name: String)
+
+// Objeto Singleton UserManager para gerenciar os usuários.
+object UserManager {
+
+    // Lista privada para armazenar os objetos User.
+    private val users = mutableListOf<User>()
+
+    // Função para adicionar um novo usuário à lista.
+    fun addUser(name: String) {
+        // Gera um novo ID com base no tamanho atual da lista.
+        val userId = users.size + 1
+        // Cria um objeto User com o ID gerado e o nome fornecido.
+        val user = User(userId, name)
+        // Adiciona o usuário à lista.
+        users.add(user)
+    }
+
+    // Função para listar os usuários na lista.
+    fun listUsers() {
+        // Itera sobre a lista de usuários e imprime cada usuário no formato "ID - Nome".
+        for (user in users) {
+            println("${user.id} - ${user.name}")
+        }
+    }
+}
+
+fun main() {
+    // Solicita ao usuário a quantidade de usuários a serem cadastrados.
+    val quantity = readLine()?.toIntOrNull() ?: 0
+
+    // Loop para coletar nomes de usuários e adicioná-los à lista.
+    for (i in 1..quantity) {
+        // Solicita ao usuário o nome do usuário e remove espaços em branco extras.
+        val name = readLine() ?: ""
+        UserManager.addUser(name.trim())
+    }
+
+    // Lista os usuários cadastrados.
+    UserManager.listUsers()
+}
