@@ -2,6 +2,10 @@
 
 Welcome to the Kotlin Bootcamp repository! This is a dedicated space for learning and practicing the Kotlin programming language.
 
+
+# # Acknowledgments
+ This bootcamp is proudly offered by DIO + Wex as part of the Java+Kotlin development program.
+
 ## About the Bootcamp
 
 The Kotlin Bootcamp is an intensive training program designed to help you become familiar with the Kotlin language, learn its fundamental concepts, and acquire Kotlin programming skills. The bootcamp covers a variety of topics, from the basics to more advanced concepts, allowing you to build your knowledge and become a more experienced Kotlin programmer.
@@ -9,8 +13,6 @@ The Kotlin Bootcamp is an intensive training program designed to help you become
 ## Contents
 
 This repository contains learning materials, example code, practical exercises, and projects related to the Kotlin Bootcamp. Here are some of the resources available:
-
-- **Lessons:** Find presentations and lecture notes for each module of the bootcamp.
 
 - **Example Code:** Explore code examples to illustrate Kotlin concepts and techniques.
 
@@ -24,3 +26,6 @@ This repository contains learning materials, example code, practical exercises, 
 
 ```bash
 git clone https://github.com/RodrigoFreireA/Learning-JAVA-Kotlin.git
+
+
+
